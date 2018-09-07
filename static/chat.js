@@ -230,7 +230,7 @@ socket.on("message", function(supadata){
     if (!alertWaiting) {
       if (!vis()) {changeIco('/static/msg.png');}
     }
-    if (data.includes('@'+username) || data.includes('@everyone')) {
+    if (data.includes('@'+username) {
       if (!vis()) {changeIco('/static/alert.png');}
       alertWaiting = true;
       start = '<div class="alert">';
